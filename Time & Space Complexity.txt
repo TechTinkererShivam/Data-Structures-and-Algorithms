@@ -1,0 +1,41 @@
+                    Time Complexity
+                    ---------------
+    loop : total no. of iterations
+    recursion : total no. of calls
+
+O(kn) ~ O(n)
+O(n+k) ~ O(n)
+O(n-k) ~ O(n)
+O(n^2+k) ~ O(n^2) 
+O(n^2+kn) ~ O(n^2)
+O(n+km) ~ O(n+m)
+O(n^(1/2)+k) ~ O(n^(1/2))
+            ---  where n,m-> variables & k-> constant.
+
+O(n) > O(n^2) 
+O(n) > O(n+m) 
+O(m) > O(n+m)
+O(logn) > O(n)
+O(logn) > O(nlog(n))
+         --- here '>' means faster.                 
+
+O(n) : linear TC
+O(n^2) : quadratic TC
+O(n^3) : cubic TC
+O(1) : constant TC
+O(log(n)) : logrithmic TC
+
+
+
+
+                    Space Complexity
+                    ----------------
+Space Complexity is the total space used in a program in terms of 'n'(approx.)
+e.g., int[] arr = new int[n] ; SC : O(n)
+O(1) : constant SC
+
+Auxiliary Space : It is the extra space used by our algorithm in terms of 'n'(approx.) 
+
+
+
+
