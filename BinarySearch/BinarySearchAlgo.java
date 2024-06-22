@@ -4,14 +4,14 @@ public class BinarySearchAlgo { // TC : O(log(n))
     public static void main(String[] args) {
         int[] arr = {12,15,25,36,45,56,78,98,100}; // sorted array
         int n = arr.length;
-        int target = 92;
+        int target = 36;
 
         boolean status = false; // assuming target is not present in the array
 
         // code of binary search algorithm
         int low=0, high=n-1;
         while(low <= high){
-            int mid = low + (high-low)/2; // don't write (low+high)/2 to avoid integer overflow.
+            int mid = low + (high-low)/2; // don't write (low+high)/2 bcz it may lead to integer overflow.
             if(arr[mid]>target) high = mid-1;
             else if (arr[mid]<target) low = mid+1;
             else{ // (arr[mid]==target)
