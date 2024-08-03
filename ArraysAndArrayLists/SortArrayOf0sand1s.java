@@ -21,7 +21,7 @@ public class SortArrayOf0sand1s {
         System.out.println();
     }
 
-    public static void swapArray(int[] arr, int i, int j){
+    public static void swap(int[] arr, int i, int j){
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
@@ -60,7 +60,7 @@ public class SortArrayOf0sand1s {
             if(arr[low]==0) low++;
             else if(arr[high]==1) high--;
             else{
-                swapArray(arr,low,high);
+                swap(arr,low,high);
                 low++;high--;
             }
         }

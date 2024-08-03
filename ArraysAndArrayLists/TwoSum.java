@@ -42,6 +42,7 @@ public class TwoSum {
                     break;
                 } 
             }
+            //if(flag==true) break;
         }
 
         if(flag == false) System.out.println("Numbers doesn't exist!");

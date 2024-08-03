@@ -37,7 +37,7 @@ public class Imp_SortArrayOf0s1sand2s {
         System.out.print("Actual Array : ");
         printArray(arr);
 
-        //     //  Two pass solution [M2]
+        //     //  Two pass solution [M1]
         // int noz=0 , no1=0; // noz = no. of zeroes , no1 = no. of ones
 
         // for (int i = 0; i < arr.length; i++) {
@@ -55,7 +55,7 @@ public class Imp_SortArrayOf0s1sand2s {
         // printArray(arr);
         // sc.close();
 
-        //  Two pass solution [M2 : Dutch's Flag Algorithm(VVI)]
+        //  Single pass solution [M2 : Dutch's Flag Algorithm(VVI)]
 
         /*                              Pseudo Code
          * 

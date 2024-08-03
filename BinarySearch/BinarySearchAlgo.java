@@ -4,7 +4,7 @@ public class BinarySearchAlgo { // TC : O(log(n))
     public static void main(String[] args) {
         int[] arr = {12,15,25,36,45,56,78,98,100}; // sorted array
         int n = arr.length;
-        int target = 36;
+        int target = 32;
 
         boolean status = false; // assuming target is not present in the array
 

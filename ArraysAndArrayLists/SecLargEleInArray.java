@@ -32,7 +32,7 @@ public class SecLargEleInArray {
         inputArray(arr, n);
         printArray(arr);
 
-        // sec larg ele in the array
+        // sec largst ele in the array[M1] : 2 pass solution
         int mx1 = arr[0], mx2 =arr[0];
 
         for(int i = 1 ; i < arr.length ; i++){
@@ -46,5 +46,8 @@ public class SecLargEleInArray {
         System.out.println("Second max element : "+mx2);
 
         sc.close();
+
+        // sec largest element in the array[M2] : 1 pass solution
+        
     }
 }

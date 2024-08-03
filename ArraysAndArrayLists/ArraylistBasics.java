@@ -17,10 +17,11 @@ public class ArraylistBasics{
          /*
              capacity not necessary to be specified
          */
-         System.out.println(al.size());
+         System.out.println(al.size()); //0
+         System.out.println(al); //[]
 
          // Initialisation
-         al.add(0,null); // arr[0]=10;
+         al.add(0,null); // arr[0]=null;
          al.add(1,20); // arr[1]=20;
          al.add(2,30); // arr[2]=30;
          al.add(3,40); // arr[3]=40;

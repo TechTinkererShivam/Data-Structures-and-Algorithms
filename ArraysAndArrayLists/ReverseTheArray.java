@@ -38,11 +38,10 @@ public class ReverseTheArray {
         sc.close();
 
         //Code to reverse an array using two pointers approach
-        int i=0 , j=arr.length-1;
-        while(i < j){
-            swap(arr, i, j);
-            i++; 
-            j--;
+        int low=0 , high=arr.length-1;
+        while(low <= high){
+            swap(arr, low, high);
+            low++; high--;
         }
 
         System.out.print("Reversed Array : ");

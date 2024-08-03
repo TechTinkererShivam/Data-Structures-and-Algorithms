@@ -1,16 +1,16 @@
 package ArraysAndArrayLists;
 
 // import java.util.*;
-
+//
 // public class RotateArrayByKSteps {
-    
+//
 //     public static void printArray(int[] arr){
 //         for(int ele : arr){
 //             System.out.print(ele+" ");
 //         }
 //         System.out.println();
 //     }
-
+//
 //     public static void inputArray(int[] arr,int n){
 //         Scanner sc = new Scanner(System.in);
 //         for(int i=0 ; i < arr.length ; i++){
@@ -19,18 +19,16 @@ package ArraysAndArrayLists;
 //         System.out.println();
 //         sc.close();
 //     }
-
-//     public static void reverseArray(int[] arr, int x, int y){
-//         int i=x , j=y;
-//         while(i < j){
-//             int temp = arr[i];
-//             arr[i] = arr[j];
-//             arr[j] = temp;
-//             i++;
-//             j--;
-//         }
-//     }
-
+//
+//    public static void reverseArray(int[] arr, int low, int high){
+//        while(low <= high){
+//            int temp = arr[low];
+//            arr[low] = arr[high];
+//            arr[high] = temp;
+//            low++; high--;
+//        }
+//    }
+//
 //     public static void main(String[] args) {
 //         Scanner sc = new Scanner(System.in);
 //         System.out.print("Enter steps of rotation : ");
@@ -39,7 +37,7 @@ package ArraysAndArrayLists;
 //         int n = sc.nextInt();
 //         k = k%n;
 //         int[] arr = new int[n];
-
+//
 //         inputArray(arr, n);
 //         System.out.print("Actual Array : ");
 //         printArray(arr);
@@ -90,16 +88,13 @@ public class RotateArrayByKSteps {
 
         int[] nums = new int[n];
 
-        int i=0;
-        while(i<k){
-            nums[i] = arr[n-k+i];
-            i++;
-        }
-
-        int j=0;
-        while(j<n-k){
-            nums[i] = arr[j];
-            i++; j++;
+        int t=0;
+        for(int i=0;i<n;i++){
+            if(i<k) nums[i]=arr[n-k+i];
+            else{
+                nums[i]=arr[t];
+                t++;
+            }
         }
 
         System.out.print("Rotated Array by effective "+k+" steps : ");

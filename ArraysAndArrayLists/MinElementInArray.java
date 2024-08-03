@@ -2,7 +2,7 @@ package ArraysAndArrayLists;
 
 import java.util.*;
 
-public class MinEleInArray {
+public class MinElementInArray {
 
     public static void inputArray(int[] arr,int n){
         Scanner sc = new Scanner(System.in);
@@ -55,13 +55,17 @@ public class MinEleInArray {
         // System.out.println("Min element in the Array : "+mn);
 
 
-        // // sec min element in the array
-        // int mn2 = arr[0];
-        // for(int i=1 ; i < arr.length ; i++){
-        //     if((arr[i] < mn2) && (arr[i] != mn)) mn2 = arr[i];
-        // }
-        // System.out.println("sec. min element in the Array : "+mn2);
+         // sec min element in the array [double pass solution : used loop 2 times]
+         int mn2 = arr[0];
+         for(int i=1 ; i < arr.length ; i++){
+             if((arr[i] < mn2) && (arr[i] != mn)) mn2 = arr[i];
+         }
+         System.out.println("sec. min element in the Array : "+mn2);
 
         sc.close();
+
+        // sec min element in the array [single pass solution : used loop only 1 time]
+
+
     }
 }

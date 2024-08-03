@@ -7,9 +7,9 @@ import java.util.*;
 
 /*         // Arrays.sort(array_name)
  *
- * Timsort is a fast sorting algorithm working at stable O(N log(N)) complexity.
+ * Timsort is a fast sorting algorithm working at stable O(Nlog(N)) complexity.
  * Timsort is a blend of Insertion Sort and Mergesort. 
- * This algorithm is implemented in Java's Arrays.sort() 
+ * This algorithm is implemented in Java as Arrays.sort()
  * 
  */
 
